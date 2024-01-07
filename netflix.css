@@ -1,0 +1,270 @@
+body{
+	background: #000;
+	color: #fff;
+	margin:0;
+}
+
+.header-content a{
+	color: white;
+	font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	text-decoration: none;
+	
+}
+
+.header{
+	width: 84%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(128, 11, 5,0.6)),  url(https://images.frandroid.com/wp-content/uploads/2022/10/netflix-octobre-contenus-2022.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 10px 8%;
+	position: relative;
+}
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+ img{
+	max-width: 150px;
+	max-height: 50px;
+}
+
+.logo{
+	widdth: 150px;
+	cursor: pointer;
+}
+
+nav button{
+	border: 0;
+	outline:0;
+	background: #db0001;
+	color: #fff;
+	paddding: 7px 10px;
+	font-size: 12px;
+	border-radius: 4px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.language-button{
+	display: inline-flex;
+	align-items: center;
+	background: transparent;
+	border: 1px solid #fff;
+	padding: 7px 10px;
+}
+
+.language-button img{
+	width: 9px;
+	margin-left: 9px;
+}
+
+.header-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	margin-top: 100px;
+}
+
+.header-content h1{
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 600;
+	max-width: 650px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+.header-content h2{
+	font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+}
+.header-content h3{
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.email{  
+	background: #fff;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	margin-top:30px;
+    overflow: hidden;
+}
+
+.email input{
+	flex: 1;
+	border: 0;
+	outline: 0;
+	margin-left: 10px;
+	
+}
+
+.email button{
+	background: #db0001;
+	border: 0;
+	outline: 0;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 10px 40px;
+}
+
+/*------------------ features ---------------------*/
+
+.features{
+	paddding: 100px 12%;
+	font-size: 20px;
+	font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    margin-left: 90px;
+	margin-top: 40px;
+}
+
+.row{
+	display: flex;
+	width: 100%;
+	aling-items: center;
+	flex-wrap: wrap;
+	padding: 50px 0px;
+}
+
+.text-column{
+	flex-basis: 50%;
+	margin-bottom: 20px;
+	
+}
+
+
+.img-column{
+	flex-basis: 50%;
+	margin-bottom: 20px;
+}
+
+.img-column img{
+	display: block;
+	max-width: 90%;
+	max-height: 100%;
+}
+
+.img-column{
+	width: 220px;
+	height: auto;
+}
+/*-----------------------faq--------------------*/
+
+.faq{
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+	font-family: "Arial";
+	border-top: 6px solid #333;
+}
+
+.questions {
+	margin: 60px auto;
+	width: 100%;
+	max-width: 750px;
+}
+
+.questions li{
+	list-style: none;
+	width: 100%;
+	padding: 5px;
+	
+}
+
+.questions li label{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	font-sixe: 18px;
+	font-weight: 500;
+	background: #303030;
+	margin: 2px;
+	cursor:pointer;
+	position: relative;
+}
+
+label::after{
+	content: '+';
+	font-size:34px;
+	position: absolute;
+	right: 20px;
+	transition: tranform 0.5s;
+}
+input[type="radio"]{
+	display: none;
+}
+
+.questions .content {
+	background: #303030;
+	text-align: left;
+	padding: 0 20px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s, padding 0.5s;
+}
+.questions input[type="radio"]:checked + label + .content{
+	
+	max-height: 600px;
+	padding: 30px 20px;
+}
+
+.questions input[type="radio"]:checked + label::after{
+	transform: rotate(135deg);
+}
+
+.faq .email{
+	max-width: 600px;
+	margin: 20px auto 60px;
+	
+}
+
+.faq small{
+	font-size: 13px;
+}
+
+/*------------------------footer----------------------*/
+
+.footer{
+	padding: 50px 15% 10px;
+	border-top: 6px solid #333;
+	color: #777;
+	font-family: "Arial";
+}
+
+.footer h2{
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.footer .column{
+	flex-basis: 25%;
+	flex-grow: 1;
+	margin-bottom:20px;
+}
+a{
+	color: #525151;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.footer .language-button{
+	color: #fff;
+	border-radius: 3px;
+}
+
+#copyright{
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
